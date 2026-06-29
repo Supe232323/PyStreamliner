@@ -1,24 +1,50 @@
 # Contributing to PyStreamliner
 
-Thank you for considering contributing to PyStreamliner! We welcome improvements, bug fixes, and new simplification rules.
+Thanks for considering a contribution. Bug fixes, new detection rules, and documentation improvements are all welcome.
 
-## How to Contribute
+---
+
+## How to contribute
 
 1. **Fork the repository**
-2. **Create a feature branch**  
+2. **Create a feature branch**
    ```bash
    git checkout -b feature/your-feature-name
+   ```
+3. **Make your changes**
+4. **Test against a messy Python file** to make sure nothing breaks
+5. **Open a pull request** with a short description of what you changed and why
 
-What We Accept
-New redundancy detection rules
-Better simplification logic (list comprehensions, context managers, etc.)
-Bug fixes
-Documentation improvements
-Performance enhancements
+---
 
-Code StyleFollow PEP 8
-Add comments for complex rules
-Include before/after examples in PR description
+## What we accept
 
-Questions?Open an issue or ask in the Pull Request. All feedback is appreciated.
+- New Tier 2 detection rules (unused code patterns, naming issues, etc.)
+- Improvements to existing analysis logic
+- Bug fixes
+- Documentation improvements
+- Performance enhancements
 
+If you're unsure whether something fits, open an issue first and ask.
+
+---
+
+## What we don't accept
+
+- Auto-fixes that could change program behavior
+- Dependencies (PyStreamliner is intentionally zero-dependency)
+- Anything that requires Python < 3.8
+
+---
+
+## Code style
+
+- Follow PEP 8
+- Add docstrings to new classes and methods
+- If you're adding a new detection rule, include a before/after example in your PR description
+
+---
+
+## Questions?
+
+Open an issue or ask directly in the pull request. All feedback is appreciated.
