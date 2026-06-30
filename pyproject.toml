@@ -20,5 +20,6 @@ classifiers = [
 [project.urls]
 "Homepage" = "https://github.com"
 
+
 [project.scripts]
 pystreamliner = "streamliner:main"
